@@ -1,0 +1,161 @@
+/* ====== ADMISSIONS ====== */
+.admissions-banner {
+  background: linear-gradient(135deg, var(--accent-700), var(--primary-800)) !important;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+.step-card {
+  text-align: center;
+  padding: var(--space-8) var(--space-6);
+  background: var(--gray-50);
+  border-radius: var(--radius-2xl);
+  border: 1px solid var(--gray-100);
+  position: relative;
+}
+
+.step-number {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+  color: white;
+  font-size: var(--text-xl);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-4);
+  box-shadow: 0 4px 12px rgba(26, 86, 219, 0.3);
+}
+
+.step-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: var(--space-2);
+}
+
+.step-desc {
+  font-size: var(--text-sm);
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+.step-connector {
+  position: absolute;
+  top: 50%;
+  right: -24px;
+  width: 48px;
+  height: 2px;
+  background: var(--gray-200);
+  z-index: 1;
+}
+
+/* Criteria */
+.adm-criteria-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+}
+
+.criteria-group {
+  margin-bottom: var(--space-6);
+}
+
+.criteria-group h3 {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: var(--space-3);
+}
+
+.criteria-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) 0;
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+}
+
+.criteria-item svg {
+  color: var(--accent-500);
+  flex-shrink: 0;
+}
+
+/* Admission Form */
+.admission-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: var(--space-10);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--gray-100);
+}
+
+.form-section {
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.form-section:last-of-type {
+  border-bottom: none;
+}
+
+.form-section-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-3);
+  border-bottom: 2px solid var(--primary-100);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.form-success {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: var(--space-12);
+  background: var(--accent-50);
+  border-radius: var(--radius-2xl);
+  border: 1px solid var(--accent-200);
+}
+
+.success-icon {
+  font-size: 48px;
+  color: var(--accent-500);
+  margin-bottom: var(--space-4);
+}
+
+.form-success h3 {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: var(--space-3);
+}
+
+.form-success p {
+  color: var(--gray-600);
+  margin-bottom: var(--space-3);
+}
+
+@media (max-width: 768px) {
+  .steps-grid { grid-template-columns: 1fr; }
+  .step-connector { display: none; }
+  .adm-criteria-grid { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+  .admission-form { padding: var(--space-6); }
+}
